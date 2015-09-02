@@ -14,6 +14,11 @@
 		8F0F2D9C1B449F43003805C4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0F2D9B1B449F43003805C4 /* Images.xcassets */; };
 		8F0F2D9F1B449F43003805C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0F2D9D1B449F43003805C4 /* LaunchScreen.xib */; };
 		8F0F2DAB1B449F43003805C4 /* ResearchKitExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F2DAA1B449F43003805C4 /* ResearchKitExamplesTests.m */; };
+		8F0F2DB61B44A52E003805C4 /* StepFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F2DB51B44A52E003805C4 /* StepFactory.m */; };
+		8F0F2DB91B44B3BA003805C4 /* DocumentFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F2DB81B44B3BA003805C4 /* DocumentFactory.m */; };
+		8F0F2DBC1B44BA6F003805C4 /* ActiveTaskFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F2DBB1B44BA6F003805C4 /* ActiveTaskFactory.m */; };
+		8F8EC7031B978AD80091191B /* research_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F8EC7021B978AD80091191B /* research_image.png */; };
+		BE9631974852FD4ECE493F27 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0434907A6937931E61B6E335 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0434907A6937931E61B6E335 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C53806088256EB1DBFBD91D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8F0F2D8B1B449F43003805C4 /* ResearchKitExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResearchKitExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F2D8F1B449F43003805C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F0F2D901B449F43003805C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +47,14 @@
 		8F0F2DA41B449F43003805C4 /* ResearchKitExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResearchKitExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0F2DA91B449F43003805C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F0F2DAA1B449F43003805C4 /* ResearchKitExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResearchKitExamplesTests.m; sourceTree = "<group>"; };
+		8F0F2DB41B44A52E003805C4 /* StepFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepFactory.h; sourceTree = "<group>"; };
+		8F0F2DB51B44A52E003805C4 /* StepFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepFactory.m; sourceTree = "<group>"; };
+		8F0F2DB71B44B3BA003805C4 /* DocumentFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentFactory.h; sourceTree = "<group>"; };
+		8F0F2DB81B44B3BA003805C4 /* DocumentFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentFactory.m; sourceTree = "<group>"; };
+		8F0F2DBA1B44BA6F003805C4 /* ActiveTaskFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveTaskFactory.h; sourceTree = "<group>"; };
+		8F0F2DBB1B44BA6F003805C4 /* ActiveTaskFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveTaskFactory.m; sourceTree = "<group>"; };
+		8F8EC7021B978AD80091191B /* research_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = research_image.png; sourceTree = "<group>"; };
+		B9B135948302EB2F7E75F25F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9631974852FD4ECE493F27 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DEC7682934A438CA25DEC7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0434907A6937931E61B6E335 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F0F2D821B449F43003805C4 = {
 			isa = PBXGroup;
 			children = (
 				8F0F2D8D1B449F43003805C4 /* ResearchKitExamples */,
 				8F0F2DA71B449F43003805C4 /* ResearchKitExamplesTests */,
 				8F0F2D8C1B449F43003805C4 /* Products */,
+				DD5C23F78EDC029FA933ED5C /* Pods */,
+				4DEC7682934A438CA25DEC7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +115,13 @@
 				8F0F2D9B1B449F43003805C4 /* Images.xcassets */,
 				8F0F2D9D1B449F43003805C4 /* LaunchScreen.xib */,
 				8F0F2D8E1B449F43003805C4 /* Supporting Files */,
+				8F0F2DB41B44A52E003805C4 /* StepFactory.h */,
+				8F0F2DB51B44A52E003805C4 /* StepFactory.m */,
+				8F0F2DB71B44B3BA003805C4 /* DocumentFactory.h */,
+				8F0F2DB81B44B3BA003805C4 /* DocumentFactory.m */,
+				8F0F2DBA1B44BA6F003805C4 /* ActiveTaskFactory.h */,
+				8F0F2DBB1B44BA6F003805C4 /* ActiveTaskFactory.m */,
+				8F8EC7021B978AD80091191B /* research_image.png */,
 			);
 			path = ResearchKitExamples;
 			sourceTree = "<group>";
@@ -119,6 +152,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DD5C23F78EDC029FA933ED5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9B135948302EB2F7E75F25F /* Pods.debug.xcconfig */,
+				6C53806088256EB1DBFBD91D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F0F2DAE1B449F43003805C4 /* Build configuration list for PBXNativeTarget "ResearchKitExamples" */;
 			buildPhases = (
+				1D141C557B79CDF4557A3CD5 /* Check Pods Manifest.lock */,
 				8F0F2D871B449F43003805C4 /* Sources */,
 				8F0F2D881B449F43003805C4 /* Frameworks */,
 				8F0F2D891B449F43003805C4 /* Resources */,
+				FBE0BB26FFA6809AFE61780B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F8EC7031B978AD80091191B /* research_image.png in Resources */,
 				8F0F2D9A1B449F43003805C4 /* Main.storyboard in Resources */,
 				8F0F2D9F1B449F43003805C4 /* LaunchScreen.xib in Resources */,
 				8F0F2D9C1B449F43003805C4 /* Images.xcassets in Resources */,
@@ -214,14 +259,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D141C557B79CDF4557A3CD5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBE0BB26FFA6809AFE61780B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8F0F2D871B449F43003805C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0F2DB91B44B3BA003805C4 /* DocumentFactory.m in Sources */,
+				8F0F2DB61B44A52E003805C4 /* StepFactory.m in Sources */,
 				8F0F2D971B449F43003805C4 /* ViewController.m in Sources */,
 				8F0F2D941B449F43003805C4 /* AppDelegate.m in Sources */,
 				8F0F2D911B449F43003805C4 /* main.m in Sources */,
+				8F0F2DBC1B44BA6F003805C4 /* ActiveTaskFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +428,7 @@
 		};
 		8F0F2DAF1B449F43003805C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B135948302EB2F7E75F25F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ResearchKitExamples/Info.plist;
@@ -357,6 +439,7 @@
 		};
 		8F0F2DB01B449F43003805C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C53806088256EB1DBFBD91D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ResearchKitExamples/Info.plist;
@@ -418,6 +501,7 @@
 				8F0F2DB01B449F43003805C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F0F2DB11B449F43003805C4 /* Build configuration list for PBXNativeTarget "ResearchKitExamplesTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +510,7 @@
 				8F0F2DB31B449F43003805C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
